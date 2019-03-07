@@ -10,9 +10,14 @@ const HeaderStyled = Styled.header`
 
 const Header = () => (
   <HeaderStyled>
-    <Grid container>
+    <Grid
+      container
+      direction="column"
+      justify="center"
+      alignItems="center"
+    >
       <Grid item xs={12}>
-          Header inicial aqui
+        Header inicial aqui
       </Grid>
     </Grid>
   </HeaderStyled>
