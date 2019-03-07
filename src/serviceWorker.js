@@ -1,3 +1,6 @@
+/* eslint no-use-before-define: ["error", { "functions": false }] */
+/* eslint no-param-reassign: ["error", { "props": false }] */
+
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
