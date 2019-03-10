@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.5",
@@ -21,7 +22,8 @@
     "test": "react-scripts test",
     "test:components": "yarn test src/ --no-watch",
     "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint . --config config/.eslintrc.js --ext .jsx,.js --ignore-pattern *.test.js*"
+    "lint": "./node_modules/.bin/eslint . --config config/.eslintrc.js --ext .jsx,.js --ignore-pattern *.test.js*",
+    "lint:clear": "clear && ./node_modules/.bin/eslint . --config config/.eslintrc.js --ext .jsx,.js --ignore-pattern *.test.js*"
   },
   "eslintConfig": {
     "extends": "react-app"
