@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import AppBar from '@material-ui/core/AppBar';
 import Icon from '@material-ui/core/Icon';
 import Ingredients from './components/Ingredients';
+import Recypes from './components/Recypes';
 
 
 const styles = theme => ({
@@ -86,11 +87,7 @@ const App = (props) => {
               </Typography>
               <Paper className={classes.paperWrapper}>
                 <h3>Testando paper</h3>
-                <ul>
-                  <li>testando</li>
-                  <li>testando</li>
-                  <li>testando</li>
-                </ul>
+                <Recypes />
               </Paper>
             </section>
           </Grid>
