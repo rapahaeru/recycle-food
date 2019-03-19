@@ -57,7 +57,7 @@ class Ingredients extends React.Component {
 }
 
 Ingredients.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
 export default withStyles(styles)(Ingredients);

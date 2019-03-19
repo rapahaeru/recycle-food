@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -59,7 +60,7 @@ const App = (props) => {
         >
           <Grid className={classes.container} item xs={12}>
             <Typography variant="h4">Lorem ipsum</Typography>
-            <Typography variant="p">
+            <Typography variant="subtitle1">
               Lorem ipsum dolor avec Lorem ipsum dolor
               avec Lorem ipsum dolor avec Lorem ipsum dolor avec Lorem ipsum dolor
               avec Lorem ipsum dolor avec.
@@ -97,6 +98,10 @@ const App = (props) => {
       </Grid>
     </Grid>
   );
+};
+
+App.propTypes = {
+  classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
 export default withStyles(styles)(App);
